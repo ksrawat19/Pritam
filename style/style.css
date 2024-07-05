@@ -21,45 +21,47 @@
     font-weight: <weight>;
     font-style: normal;
     } */
-    
-    body {
-      background-color: #11071f;
-    }
-    .purple {
-      color: #7127ba;
-    }
-    .F-size {
-      font-size: 2.6rem;
-    }
-    br {
-      margin: -0.8rem;
-      line-height: 0.1;
-      content: "";
-      display: block;
-    }
-    .svg{
-      position: absolute;
-      top: -4rem;
-      left: -4rem;
-      z-index: -1;
-    }
-    
 
+body {
+  background-color: #11071f;
+}
+.purple {
+  color: #7127ba;
+}
+.F-size {
+  font-size: 2.6rem;
+}
+
+.svg {
+  position: absolute;
+  top: -4rem;
+  left: -4rem;
+  z-index: -1;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.block {
+  display: block;
+}
 
 /* ---------------------BODY--------------------- */
-    header {
-      background-color: #1a0b2e;
-    }
-    
-    nav {
-      max-width: 80%;
-      height: 10vh;
-      margin: auto;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      /* background-color: aqua; */
+header {
+  background-color: #1a0b2e;
+}
+
+nav {
+  max-width: 1200px;
+  height: 10vh;
+  margin: auto;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: aqua; */
 }
 #logo {
   /* background-color: #2f2f2f; */
@@ -71,12 +73,9 @@
   justify-content: space-between;
   /* background-color: #2f2f2f; */
 }
-#nav-list li {
-  list-style: none;
-}
+
 #nav-list li a {
   color: #ffffff;
-  text-decoration: none;
   font-weight: 600;
   font-size: 14px;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -87,9 +86,15 @@ main {
 }
 
 #hero {
-  width: 80%;
+  width: 1200px;
   margin: auto;
   position: relative;
+}
+#hero br {
+  margin: -0.8rem;
+  line-height: 0.1;
+  content: "";
+  display: block;
 }
 #heading {
   margin: 5% 0 2% 34%;
@@ -118,13 +123,72 @@ main {
   justify-content: center;
 }
 
-#about{
+#about {
   margin: 4% 0 0 14%;
 }
-#about-heading{
+#about-heading {
   margin: 0 0 4% 0;
 }
-#about p{
+#about p {
   width: 80%;
   text-align: justify;
+}
+
+#contact {
+  /* background-color: rgb(92, 32, 149); */
+  max-width: 1200px;
+  padding: 5% 0 2% 0;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+#contact-head {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 1rem;
+  left: 14%;
+}
+#contact-page-left {
+  width: 42%;
+  margin: 0 0 0 18%;
+  position: relative;
+}
+
+#contact-page-right {
+  /* padding-top: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.2rem;
+}
+#social-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+#mail{
+  height: 3rem;
+  border: 0;
+  background-color: #11071f;
+}
+h3 {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  text-align: justify;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+h4 {
+  position: absolute;
+  right: 8rem;
+  bottom: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+#copy {
+  height: 8vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
